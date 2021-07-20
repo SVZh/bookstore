@@ -13,5 +13,7 @@ public class PrivateData {
 
     private String description;
 
+    private Boolean active;
+
     private String passportNumber;
 }

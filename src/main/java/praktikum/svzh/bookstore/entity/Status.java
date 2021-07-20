@@ -17,6 +17,8 @@ public class Status {
 
     private String name;
 
+    private Boolean active;
+
     @OneToMany(mappedBy = "status", cascade = CascadeType.ALL)
     private Set<Order> orderSet = new HashSet<>();
 }

@@ -18,6 +18,8 @@ public class DeliveryMethod {
     @Column(nullable = false)
     private String name;
 
+    private Boolean active;
+
     @OneToMany(mappedBy = "deliveryMethod", cascade = CascadeType.ALL)
     private Set<Order> orderSet = new HashSet<>();
 }

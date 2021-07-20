@@ -37,6 +37,8 @@ public class Employee {
     @OneToMany(mappedBy = "employee", cascade = CascadeType.ALL)
     private Set<Order> orderSet = new HashSet<>();
 
+    private Boolean active;
+
     @OneToMany
     private Set<Contact> contactSet = new HashSet<>();
 }

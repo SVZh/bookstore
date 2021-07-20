@@ -18,6 +18,8 @@ public class PaymentMethod {
     @Column(nullable = false)
     private String name;
 
+    private Boolean active;
+
     @OneToMany(mappedBy = "paymentMethod", cascade = CascadeType.ALL)
     private Set<Order> orderSet = new HashSet<>();
 }
