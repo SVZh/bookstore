@@ -54,6 +54,6 @@ public class Book {
     @Column(nullable = false)
     private Long editorialNumber;
 
-    @ManyToMany(mappedBy = "bookSet")
+    @ManyToMany
     private Set<Language> languageSet;
 }

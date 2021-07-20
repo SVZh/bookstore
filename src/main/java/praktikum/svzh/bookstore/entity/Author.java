@@ -23,6 +23,6 @@ public class Author {
 
     private LocalDateTime dateOfDeath;
 
-    @ManyToMany(mappedBy = "authorSet")
+    @ManyToMany
     private Collection<Language> languageSet;
 }
