@@ -18,6 +18,7 @@ public class PaymentMethod {
     @Column(nullable = false)
     private String name;
 
+    @Column(columnDefinition = "boolean default false")
     private Boolean active;
 
     @OneToMany(mappedBy = "paymentMethod", cascade = CascadeType.ALL)

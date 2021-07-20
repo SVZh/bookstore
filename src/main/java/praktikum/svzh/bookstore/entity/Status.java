@@ -17,6 +17,7 @@ public class Status {
 
     private String name;
 
+    @Column(columnDefinition = "boolean default false")
     private Boolean active;
 
     @OneToMany(mappedBy = "status", cascade = CascadeType.ALL)

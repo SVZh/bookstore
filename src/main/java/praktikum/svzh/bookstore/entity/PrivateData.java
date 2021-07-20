@@ -13,6 +13,7 @@ public class PrivateData {
 
     private String description;
 
+    @Column(columnDefinition = "boolean default false")
     private Boolean active;
 
     private String passportNumber;

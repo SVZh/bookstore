@@ -18,6 +18,7 @@ public class DeliveryMethod {
     @Column(nullable = false)
     private String name;
 
+    @Column(columnDefinition = "boolean default false")
     private Boolean active;
 
     @OneToMany(mappedBy = "deliveryMethod", cascade = CascadeType.ALL)

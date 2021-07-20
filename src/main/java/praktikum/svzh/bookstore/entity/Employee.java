@@ -37,6 +37,7 @@ public class Employee {
     @OneToMany(mappedBy = "employee", cascade = CascadeType.ALL)
     private Set<Order> orderSet = new HashSet<>();
 
+    @Column(columnDefinition = "boolean default false")
     private Boolean active;
 
     @OneToMany
