@@ -26,3 +26,4 @@ application.properties
 *.dbs
 rundocker.sh
 *.bak
+*.docx
