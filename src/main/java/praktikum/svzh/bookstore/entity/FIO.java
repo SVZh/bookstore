@@ -13,10 +13,10 @@ public class FIO {
 
     private String description;
 
-    @Column(nullable = false)
+    @Column(nullable = false, length = 20)
     private String firstName;
 
-    @Column(nullable = false)
+    @Column(nullable = false, length = 40)
     private String lastName;
 
     private String middleName;

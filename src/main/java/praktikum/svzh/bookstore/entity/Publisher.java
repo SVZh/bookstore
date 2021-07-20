@@ -21,6 +21,6 @@ public class Publisher {
     @OneToMany(mappedBy = "publisher", cascade = CascadeType.ALL)
     private Set<Book> bookSet = new HashSet<>();
 
-    @OneToMany(mappedBy = "publisher", cascade = CascadeType.ALL)
+    @OneToMany
     private Set<Contact> contactSet = new HashSet<>();
 }

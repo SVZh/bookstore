@@ -31,6 +31,12 @@ public class Employee {
     @ManyToOne(optional = false)
     private Position position;
 
+    @OneToOne(cascade = CascadeType.ALL)
+    private PrivateData privateData;
+
     @OneToMany(mappedBy = "employee", cascade = CascadeType.ALL)
     private Set<Order> orderSet = new HashSet<>();
+
+    @OneToMany
+    private Set<Contact> contactSet = new HashSet<>();
 }

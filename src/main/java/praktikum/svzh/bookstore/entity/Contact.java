@@ -21,7 +21,4 @@ public class Contact {
 
     @Column(nullable = false)
     private String contactPersonName;
-
-    @ManyToOne
-    private Publisher publisher;
 }
