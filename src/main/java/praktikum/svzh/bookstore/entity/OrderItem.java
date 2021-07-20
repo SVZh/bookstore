@@ -17,7 +17,7 @@ public class OrderItem {
     private Long count;
 
     @ManyToOne(optional = false)
-    private BookCopy bookCopy;
+    private Book book;
 
     @Column(nullable = false)
     private Long costAtTime;

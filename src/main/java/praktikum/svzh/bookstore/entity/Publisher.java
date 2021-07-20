@@ -18,9 +18,6 @@ public class Publisher {
     @Column(nullable = false)
     private String name;
 
-    @OneToMany(mappedBy = "publisher", cascade = CascadeType.ALL)
-    private Set<Book> bookSet = new HashSet<>();
-
     @OneToMany
     private Set<Contact> contactSet = new HashSet<>();
 }

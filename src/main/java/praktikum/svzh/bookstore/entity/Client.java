@@ -25,9 +25,6 @@ public class Client {
     @OneToOne(cascade = CascadeType.ALL)
     private PrivateData privateData;
 
-    @OneToMany(mappedBy = "client", cascade = CascadeType.ALL)
-    private Set<Order> orderSet = new HashSet<>();
-
     @OneToMany
     private Set<Contact> contactSet = new HashSet<>();
 }

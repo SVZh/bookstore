@@ -3,12 +3,10 @@ package praktikum.svzh.bookstore.entity;
 import lombok.Data;
 
 import javax.persistence.*;
-import java.util.HashSet;
-import java.util.Set;
 
-@Entity(name="STATUSES")
+@Entity(name="ORDERSTATUSES")
 @Data
-public class Status {
+public class OrderStatus {
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     private Long id;
@@ -19,7 +17,4 @@ public class Status {
 
     @Column(columnDefinition = "boolean default false")
     private Boolean active;
-
-    @OneToMany(mappedBy = "status", cascade = CascadeType.ALL)
-    private Set<Order> orderSet = new HashSet<>();
 }

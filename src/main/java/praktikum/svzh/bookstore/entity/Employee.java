@@ -34,9 +34,6 @@ public class Employee {
     @OneToOne(cascade = CascadeType.ALL)
     private PrivateData privateData;
 
-    @OneToMany(mappedBy = "employee", cascade = CascadeType.ALL)
-    private Set<Order> orderSet = new HashSet<>();
-
     @Column(columnDefinition = "boolean default false")
     private Boolean active;
 

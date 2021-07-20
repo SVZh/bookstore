@@ -26,16 +26,18 @@ public class Book {
 
     private String annotation;
 
+    @ManyToOne(optional = false)
+    private Mark mark;
+
+    @ManyToOne(optional = false)
+    private BookStatus bookStatus;
+
     @Column(nullable = false)
     @Pattern(regexp = "^[A-Za-z0-9]{8}$")
     private String internalId;
 
-    @Column(nullable = false)
-    @OneToMany(mappedBy = "book", cascade = CascadeType.ALL)
-    private Set<BookCopy> bookCopySet = new HashSet<>();
-
-    @ManyToOne(optional = false)
-    private Author author;
+    @ManyToMany
+    private Set<Author> authorSet = new HashSet<>();
 
     @Column(nullable = false)
     private Long actualCost;

@@ -4,8 +4,6 @@ import lombok.Data;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
-import java.util.HashSet;
-import java.util.Set;
 
 @Entity(name="ORDERS")
 @Data
@@ -29,11 +27,8 @@ public class Order {
     private Client client;
 
     @ManyToOne(optional = false)
-    private Status status;
+    private OrderStatus orderStatus;
 
     @Column(nullable = false)
     private LocalDateTime dateOfOrder;
-
-    @OneToMany(mappedBy = "order", cascade = CascadeType.ALL)
-    private Set<OrderItem> orderItemSet = new HashSet<>();
 }
