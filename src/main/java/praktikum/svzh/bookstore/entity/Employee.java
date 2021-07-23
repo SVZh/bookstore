@@ -27,9 +27,6 @@ public class Employee {
     @Column(nullable = false)
     private LocalDateTime dateOfEmployment;
 
-    @ManyToOne(optional = false)
-    private Position position;
-
     @OneToOne(cascade = CascadeType.ALL)
     private PrivateData privateData;
 
