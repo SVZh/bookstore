@@ -1,11 +1,13 @@
 package praktikum.svzh.bookstore.entity;
 
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 import javax.persistence.*;
 
 @Entity(name="ORDERITEMS")
-@Data
+@Getter
+@Setter
 public class OrderItem {
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)

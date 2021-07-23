@@ -1,12 +1,14 @@
 package praktikum.svzh.bookstore.entity;
 
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 import javax.persistence.*;
 import java.util.Collection;
 
 @Entity(name="LANGUAGES")
-@Data
+@Getter
+@Setter
 public class Language {
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
