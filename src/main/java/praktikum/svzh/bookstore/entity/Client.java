@@ -20,12 +20,7 @@ public class Client {
     @OneToOne(optional = false)
     private FIO fio;
 
-    private String phone;
-
     private String address;
-
-    @OneToOne(cascade = CascadeType.ALL)
-    private PrivateData privateData;
 
     @OneToMany
     private Set<Contact> contactSet = new HashSet<>();

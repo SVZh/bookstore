@@ -22,9 +22,6 @@ public class Employee {
     private FIO fio;
 
     @Column(nullable = false)
-    private String phone;
-
-    @Column(nullable = false)
     private LocalDateTime dateOfBirth;
 
     @Column(nullable = false)
