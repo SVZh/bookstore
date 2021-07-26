@@ -7,12 +7,12 @@ import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
-@Entity(name="PUBLISHERS")
+@Entity(name = "PUBLISHERS")
 @Getter
 @Setter
 public class Publisher {
     @Id
-    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String description;

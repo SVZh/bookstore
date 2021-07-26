@@ -6,12 +6,12 @@ import lombok.Setter;
 import javax.persistence.*;
 import java.util.Collection;
 
-@Entity(name="LANGUAGES")
+@Entity(name = "LANGUAGES")
 @Getter
 @Setter
 public class Language {
     @Id
-    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String description;

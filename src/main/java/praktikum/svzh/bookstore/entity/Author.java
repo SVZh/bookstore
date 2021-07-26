@@ -7,12 +7,12 @@ import javax.persistence.*;
 import java.time.LocalDateTime;
 import java.util.Collection;
 
-@Entity(name="AUTHORS")
+@Entity(name = "AUTHORS")
 @Getter
 @Setter
 public class Author {
     @Id
-    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String description;

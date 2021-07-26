@@ -1,15 +1,14 @@
 package praktikum.svzh.bookstore.entity;
 
 import lombok.Getter;
-import lombok.Setter;
 
 import javax.persistence.*;
 
-@Entity(name="PRIVATEDATA")
+@Entity(name = "PRIVATEDATA")
 @Getter
 public class PrivateData {
     @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String description;
