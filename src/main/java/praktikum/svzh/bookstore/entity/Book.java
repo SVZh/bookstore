@@ -6,7 +6,6 @@ import lombok.Setter;
 import javax.persistence.*;
 import javax.validation.constraints.Pattern;
 import java.time.LocalDateTime;
-import java.util.HashSet;
 import java.util.Set;
 
 @Entity(name = "BOOKS")
@@ -37,9 +36,6 @@ public class Book {
     @Column(nullable = false)
     @Pattern(regexp = "^[A-Za-z0-9]{8}$")
     private String internalId;
-
-    @ManyToMany
-    private Set<Author> authorSet = new HashSet<>();
 
     @Column(nullable = false)
     private Long actualCost;
